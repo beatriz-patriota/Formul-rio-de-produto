@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css" />
+  </head>
+  <header>
+    <h1>Formulário de produtos</h1>
+  </header>
+  <body>
+    <section class="esq">
+      <div>
+        Inserir as seguintes informações:
+      </div>
+      <div>
+        Nome do produto:
+        <input type="text" id="NomePro" />
+      </div>
+      <div>
+        Valor: (R$)
+        <input type="number" id="valor" />
+      </div>
+      <div>
+        Descrição:
+        <input type="text" id="desc" />
+      </div>
+      <div>
+        <button type="button" onclick="Adicionar()">Adicionar</button>
+      </div>
+      <div>
+        Deseja finalizar a compra? <br />
+        <br />
+        <button type="button" onclick="Finalizar ()">Finalizar</button>
+      </div>
+      <div>
+        Utilizar cupom de 10% de desconto: <br /><br />
+        <button type="button" onclick="Cupom()">Utilizar</button>
+      </div>
+    </section>
+    <aside class="lateral">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Valor</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody id="Resultado"></tbody>
+      </table>
+    </aside>
+  </body>
+  <script src="produto.js"></script>
+</html>
